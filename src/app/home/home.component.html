@@ -1,0 +1,7 @@
+<app-display-cards [confirmedCases]='confirmedCases' [activeCases]='activeCases' [deaths]='deaths' [recoveredCases]='recoveredCases'></app-display-cards>
+<google-chart [data]="dataTab" [type]="pieType" [title]="chartTitle" [height]="pieChartHeight"></google-chart>
+<google-chart [data]="dataTab" [type]="columnType" [title]="chartTitle" [height]="columnChartHeight"></google-chart>
+<div class="jumbotron bg-white mx-auto text-center">
+    <button (click)="refreshPage()" class="ui button">Refresh</button>
+    Note : If you want to refresh the data or if you don't see the charts, Press this Button.
+</div>
